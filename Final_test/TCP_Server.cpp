@@ -13,7 +13,7 @@ int main() {
     size_t addrlen = sizeof(server_address);
 
 
-    if (server_socket = socket(AF_INET, SOCK_STREAM, 0) == -1) {
+    if (server_socket = socket(AF_INET, SOCK_STREAM, 0) == 0) {
         std::cerr << "Error: Unable to create socket" << std::endl;
         return 1;
     }
